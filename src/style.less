@@ -1,0 +1,152 @@
+// Import Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700italic|Open+Sans+Condensed:300,300italic,700|Reenie+Beanie);
+
+// Declare Text Variables
+@headerFont: 'Open Sans', sans-serif;
+@bodyFont: 'Open Sans Condensed', sans-serif;
+@logoFont: 'Reenie Beanie', cursive;
+
+// Declare Color Variables
+@lightGray: #eee;
+@medGray: #666;
+@darkGray: #343434;
+@white: #fff;
+@highlight: #AEEE00;
+
+
+// Standar Ground Zero
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+// Main Styling
+header, nav, footer, section { width: 100%; }
+
+body {
+  color: @white;
+  font: normal .85em @headerFont;
+}
+
+p {
+  margin: 0 1em 1em 1em;
+}
+
+p:first-letter {
+  font-size: 2em;
+  line-height: 1em;
+  margin-right: .05em;
+}
+
+h2 {
+  font: normal 2em @bodyFont;
+  color: @lightGray;
+  margin-bottom: .5em;
+  
+}
+
+li {
+  list-style: square outside none;
+  display: list-item;
+  margin-left: 2em;
+}
+
+// Header Styling
+header {
+  background-image: url("../img/meProfileImg-mobile.jpg");
+  background-repeat: no-repeat;
+  min-height: 18em;
+  background-size: cover;
+  background-position: center center;
+  color: @white;
+  text-align: center;
+  padding-top: .25em;
+  
+  h1 {
+    margin: 1% auto 0 auto;
+    padding-left: 11%;
+    font: 2.5em @logoFont;
+  }
+  
+}
+
+// Nav Styling
+#menuButton {
+  display: inline-block;
+  position: fixed;
+  top: .5em;
+  left: .5em;
+  border: .05em solid @white;
+  width: auto;
+  padding: 0 .4em .2em;
+  background-color: rgba( 43, 43, 43, 0.75 );
+  z-index: 99999;
+  
+  a {
+    text-decoration: none;
+    color: @white;
+    font: normal .75em @headerFont;
+    text-transform: uppercase;
+  }
+}
+
+
+// Content Section Styling
+section {
+  padding: .5em .75em 3em;
+}
+
+#about, #skills {
+  background-color: @darkGray;
+}
+
+#experience, #contact {
+  background-color: @medGray;
+}
+
+#columnList {
+  columns: 2 11em;
+  column-gap: 2em;
+}
+
+// Contact Form Styling
+form {
+  padding: 6/16em 20/16em;
+  
+  input {
+    height: 40/16em;
+  }
+  
+  textarea {
+    overflow: auto;
+    resize: vertical;
+  }
+  
+  input, textarea {
+    border: 1/16em solid @darkGray;
+    font: normal .80em @headerFont;
+    width: 100%;
+    padding: 6/16em 12/16em;
+    margin: 6/16em auto;
+    border-radius: 2/16em;
+    background-color: @lightGray;
+    color: darken(@darkGray,30%);
+  }
+  
+  .sendButton{
+    height: 3em;
+    width: auto;
+    padding: 6/16em 37/16em;
+    text-transform: uppercase;
+  }
+  
+  .sendButton:hover{
+    background-color: @darkGray;
+    color: @lightGray;
+  }
+}
+
+// Footer Styling
