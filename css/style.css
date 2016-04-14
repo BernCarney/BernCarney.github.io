@@ -57,7 +57,7 @@ header {
 header h1 {
   margin: 1% auto 0 auto;
   padding-left: 11%;
-  font: bold 2em 'Open Sans Condensed', sans-serif;
+  font: normal 2.5em 'Open Sans Condensed', sans-serif;
 }
 #menuButton {
   display: inline-block;
@@ -66,14 +66,14 @@ header h1 {
   left: .5em;
   border: 0.05em solid #ffffff;
   width: auto;
-  padding: 0 .4em .2em;
+  padding: 0 .4em .15em;
   background-color: rgba(43, 43, 43, 0.75);
   z-index: 99999;
 }
 #menuButton a {
   text-decoration: none;
   color: #ffffff;
-  font: normal 0.75em 'Open Sans Condensed', sans-serif;
+  font: normal 1em 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
 }
 section {

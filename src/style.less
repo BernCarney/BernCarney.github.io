@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic|Open+Sans+Condensed:300,300italic,700);
 
 // Declare Text Variables
+// Consider differed header font like Lato or Open Sans
 @headerFont: 'Open Sans Condensed', sans-serif;
 @bodyFont: 'Tinos', serif;
 @logoFont: @headerFont;
@@ -78,7 +79,7 @@ header {
   h1 {
     margin: 1% auto 0 auto;
     padding-left: 11%;
-    font: bold 2em @logoFont;
+    font: normal 2.5em @logoFont;
   }
   
 }
@@ -91,14 +92,14 @@ header {
   left: .5em;
   border: .05em solid @white;
   width: auto;
-  padding: 0 .4em .2em;
+  padding: 0 .4em .15em;
   background-color: rgba( 43, 43, 43, 0.75 );
   z-index: 99999;
   
   a {
     text-decoration: none;
     color: @white;
-    font: normal .75em @headerFont;
+    font: normal 1em @headerFont;
     text-transform: uppercase;
   }
 }
