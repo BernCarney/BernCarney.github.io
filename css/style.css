@@ -45,7 +45,8 @@ li {
   margin-left: 2em;
 }
 #expLogo {
-  max-width: 100%;
+  max-width: 50%;
+  margin-bottom: .5em;
 }
 header {
   background-image: url("../img/meProfileImg-mobile.jpg");
@@ -98,8 +99,11 @@ section {
      -moz-column-gap: 2em;
           column-gap: 2em;
 }
-#expContainer {
-  margin-top: 3em;
+#sectionContainer {
+  margin: 3em 1em 0;
+}
+#aboutContainer {
+  margin: 0 1em 0;
 }
 form {
   padding: 0.375em 1.25em;
