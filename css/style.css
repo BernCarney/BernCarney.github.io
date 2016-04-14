@@ -98,6 +98,7 @@ section {
   -webkit-column-gap: 2em;
      -moz-column-gap: 2em;
           column-gap: 2em;
+  font-size: .9em;
 }
 #sectionContainer {
   margin: 3em 1em 0;
