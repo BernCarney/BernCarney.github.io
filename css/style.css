@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700italic|Open+Sans+Condensed:300,300italic,700|Reenie+Beanie);
-/* line 18, style.less */
 * {
   margin: 0;
   padding: 0;
@@ -7,41 +6,38 @@
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
 }
-/* line 27, style.less */
 header,
 nav,
 footer,
 section {
   width: 100%;
 }
-/* line 29, style.less */
 body {
   color: #ffffff;
   font: normal 0.85em 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
-/* line 34, style.less */
 p {
   margin: 0 1em 1em 1em;
 }
-/* line 38, style.less */
 #about p:first-letter {
   font-size: 2em;
   line-height: 1em;
   margin-right: .05em;
 }
-/* line 44, style.less */
 h2 {
   font: normal 2em 'Open Sans Condensed', sans-serif;
   color: #eeeeee;
   margin-bottom: .5em;
 }
-/* line 51, style.less */
 li {
   list-style: disc outside none;
   display: list-item;
   margin-left: 2em;
 }
-/* line 58, style.less */
+#expLogo {
+  max-width: 100%;
+}
 header {
   background-image: url("../img/meProfileImg-mobile.jpg");
   background-repeat: no-repeat;
@@ -52,13 +48,11 @@ header {
   text-align: center;
   padding-top: .25em;
 }
-/* line 68, style.less */
 header h1 {
   margin: 1% auto 0 auto;
   padding-left: 11%;
   font: 2.5em 'Reenie Beanie', cursive;
 }
-/* line 77, style.less */
 #menuButton {
   display: inline-block;
   position: fixed;
@@ -70,28 +64,23 @@ header h1 {
   background-color: rgba(43, 43, 43, 0.75);
   z-index: 99999;
 }
-/* line 88, style.less */
 #menuButton a {
   text-decoration: none;
   color: #ffffff;
   font: normal 0.75em 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
-/* line 98, style.less */
 section {
   padding: .5em .75em 3em;
 }
-/* line 102, style.less */
 #about,
 #skills {
   background-color: #343434;
 }
-/* line 106, style.less */
 #experience,
 #contact {
   background-color: #666666;
 }
-/* line 110, style.less */
 #columnList {
   -webkit-columns: 2 11em;
      -moz-columns: 2 11em;
@@ -100,24 +89,19 @@ section {
      -moz-column-gap: 2em;
           column-gap: 2em;
 }
-/* line 115, style.less */
 #expContainer {
   margin-top: 3em;
 }
-/* line 120, style.less */
 form {
   padding: 0.375em 1.25em;
 }
-/* line 123, style.less */
 form input {
   height: 2.5em;
 }
-/* line 127, style.less */
 form textarea {
   overflow: auto;
   resize: vertical;
 }
-/* line 132, style.less */
 form input,
 form textarea {
   border: 0.0625em solid #343434;
@@ -129,14 +113,12 @@ form textarea {
   background-color: #eeeeee;
   color: #000000;
 }
-/* line 143, style.less */
 form .sendButton {
   height: 3em;
   width: auto;
   padding: 0.375em 2.3125em;
   text-transform: uppercase;
 }
-/* line 150, style.less */
 form .sendButton:hover {
   background-color: #343434;
   color: #eeeeee;
