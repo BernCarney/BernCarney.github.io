@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700italic|Open+Sans+Condensed:300,300italic,700|Reenie+Beanie);
+@import url(https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic|Open+Sans+Condensed:300,300italic,700);
 * {
   margin: 0;
   padding: 0;
@@ -14,19 +14,25 @@ section {
 }
 body {
   color: #ffffff;
-  font: normal 0.85em 'Open Sans', sans-serif;
+  font: normal 0.9em 'Tinos', serif;
   overflow-x: hidden;
 }
+h2,
+h3,
+h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 p {
-  margin: 0 1em 1em 1em;
+  margin: 0 1em 1em 0;
 }
 #about p:first-letter {
   font-size: 2em;
   line-height: 1em;
-  margin-right: .05em;
+  margin-right: .10em;
 }
 h2 {
-  font: normal 2em 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
   color: #eeeeee;
   margin-bottom: .5em;
 }
@@ -51,7 +57,7 @@ header {
 header h1 {
   margin: 1% auto 0 auto;
   padding-left: 11%;
-  font: 2.5em 'Reenie Beanie', cursive;
+  font: bold 2em 'Open Sans Condensed', sans-serif;
 }
 #menuButton {
   display: inline-block;
@@ -67,11 +73,11 @@ header h1 {
 #menuButton a {
   text-decoration: none;
   color: #ffffff;
-  font: normal 0.75em 'Open Sans', sans-serif;
+  font: normal 0.75em 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
 }
 section {
-  padding: .5em .75em 3em;
+  padding: .25em .75em 3em;
 }
 #about,
 #skills {
@@ -97,6 +103,7 @@ form {
 }
 form input {
   height: 2.5em;
+  text-transform: uppercase;
 }
 form textarea {
   overflow: auto;
@@ -105,7 +112,7 @@ form textarea {
 form input,
 form textarea {
   border: 0.0625em solid #343434;
-  font: normal 0.8em 'Open Sans', sans-serif;
+  font: normal 1em 'Open Sans Condensed', sans-serif;
   width: 100%;
   padding: 0.375em 0.75em;
   margin: 0.375em auto;

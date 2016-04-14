@@ -1,10 +1,10 @@
 // Import Fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700italic|Open+Sans+Condensed:300,300italic,700|Reenie+Beanie);
+@import url(https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic|Open+Sans+Condensed:300,300italic,700);
 
 // Declare Text Variables
-@headerFont: 'Open Sans', sans-serif;
-@bodyFont: 'Open Sans Condensed', sans-serif;
-@logoFont: 'Reenie Beanie', cursive;
+@headerFont: 'Open Sans Condensed', sans-serif;
+@bodyFont: 'Tinos', serif;
+@logoFont: @headerFont;
 
 // Declare Color Variables
 @lightGray: #eee;
@@ -28,22 +28,27 @@ header, nav, footer, section { width: 100%; }
 
 body {
   color: @white;
-  font: normal .85em @headerFont;
+  font: normal .9em @bodyFont;
   overflow-x: hidden;
 }
 
+h2, h3, h4 {
+  font-family: @headerFont;
+}
+
 p {
-  margin: 0 1em 1em 1em;
+  margin: 0 1em 1em 0;
 }
 
 #about p:first-letter {
   font-size: 2em;
   line-height: 1em;
-  margin-right: .05em;
+  margin-right: .10em;
 }
 
 h2 {
-  font: normal 2em @bodyFont;
+  font-size: 2em;
+  font-weight: 300;
   color: @lightGray;
   margin-bottom: .5em;
   
@@ -73,7 +78,7 @@ header {
   h1 {
     margin: 1% auto 0 auto;
     padding-left: 11%;
-    font: 2.5em @logoFont;
+    font: bold 2em @logoFont;
   }
   
 }
@@ -101,7 +106,7 @@ header {
 
 // Content Section Styling
 section {
-  padding: .5em .75em 3em;
+  padding: .25em .75em 3em;
 }
 
 #about, #skills {
@@ -127,6 +132,7 @@ form {
   
   input {
     height: 40/16em;
+    text-transform: uppercase;
   }
   
   textarea {
@@ -136,7 +142,7 @@ form {
   
   input, textarea {
     border: 1/16em solid @darkGray;
-    font: normal .80em @headerFont;
+    font: normal 1em @headerFont;
     width: 100%;
     padding: 6/16em 12/16em;
     margin: 6/16em auto;
