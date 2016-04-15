@@ -70,22 +70,50 @@ header #headerSocial {
 header #headerSocial a {
   color: #ffffff;
 }
-#menuButton {
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal 1em 'Open Sans Condensed', sans-serif;
+}
+nav ul {
+  text-align: center;
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  -webkit-transition: 0.25s ease-in;
+          transition: 0.25s ease-in;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 auto;
+  padding: 1.5em 0;
+  border-top: solid 0.0625em #666666;
+  background-color: rgba(43, 43, 43, 0.85);
+}
+nav ul li:first-of-type {
+  border-top: solid 0.0625em #666666;
+}
+nav ul li:last-of-type {
+  border-bottom: solid 0.0625em #666666;
+}
+.menuButton {
   display: inline-block;
   position: fixed;
   top: .5em;
   left: .5em;
   border: 0.05em solid #ffffff;
   width: auto;
-  padding: 0 .25em .1em;
+  padding: 0 .25em;
   background-color: rgba(43, 43, 43, 0.75);
-  z-index: 99999;
 }
-#menuButton a {
-  text-decoration: none;
-  color: #ffffff;
-  font: normal 1em 'Open Sans Condensed', sans-serif;
-  text-transform: uppercase;
+.toggleMenu {
+  left: 0;
+}
+.hideButton {
+  display: none;
 }
 section {
   padding: .25em .75em 3em;

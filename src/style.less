@@ -98,23 +98,60 @@ header {
 }
 
 // Nav Styling
-#menuButton {
+nav {
+  
+  a {
+    color: @white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: normal 1em @headerFont;
+  }
+  
+  ul {
+    text-align: center;
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    transition: .25s ease-in;
+    
+    li {
+      list-style: none;
+      margin: 0 auto;
+      padding: 1.5em 0;
+      border-top: solid 1/16em @medGray;
+      background-color: rgba( 43, 43, 43, 0.85 );
+    }
+    
+    li:first-of-type {
+      border-top: solid 1/16em @medGray;
+    }
+    
+    li:last-of-type {
+      border-bottom: solid 1/16em @medGray;
+    }
+  }
+  
+}
+
+.menuButton {
   display: inline-block;
   position: fixed;
   top: .5em;
   left: .5em;
   border: .05em solid @white;
   width: auto;
-  padding: 0 .25em .1em;
+  padding: 0 .25em;
   background-color: rgba( 43, 43, 43, 0.75 );
-  z-index: 99999;
-  
-  a {
-    text-decoration: none;
-    color: @white;
-    font: normal 1em @headerFont;
-    text-transform: uppercase;
-  }
+}
+
+.toggleMenu {
+  left: 0;
+}
+
+.hideButton {
+  display: none;
 }
 
 
