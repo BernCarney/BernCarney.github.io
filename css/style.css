@@ -90,6 +90,9 @@ header #headerSocial a {
 section {
   padding: .25em .75em 3em;
 }
+section h2:first-of-type {
+  text-align: center;
+}
 #about,
 #skills {
   background-color: #343434;
