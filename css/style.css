@@ -77,7 +77,7 @@ header #headerSocial a {
   left: .5em;
   border: 0.05em solid #ffffff;
   width: auto;
-  padding: 0 .4em .15em;
+  padding: 0 .25em .1em;
   background-color: rgba(43, 43, 43, 0.75);
   z-index: 99999;
 }
