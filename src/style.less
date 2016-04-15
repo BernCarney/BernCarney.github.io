@@ -78,12 +78,21 @@ header {
   background-position: center center;
   color: @white;
   text-align: center;
-  padding-top: .25em;
+  padding-top: .15em;
   
   h1 {
-    margin: 1% auto 0 auto;
+    margin: 0 auto 0 auto;
     padding-left: 11%;
     font: normal 2.5em @logoFont;
+  }
+  
+  #headerSocial {
+    margin-top: -.25em;
+    padding-left: 10%;
+    
+    a {
+      color: rgba(255, 255, 255, 1);
+    }  
   }
   
 }
@@ -182,4 +191,10 @@ footer {
   text-align: center;
   font: normal .9em @headerFont;
   padding: 1.75em;
+  
+  a {
+    text-decoration: none;
+    color: @medGray;
+    font-size: 1.15em;
+  }
 }
