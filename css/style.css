@@ -44,7 +44,7 @@ li {
   display: list-item;
   margin-left: 2em;
 }
-#expLogo {
+.expLogo {
   max-width: 50%;
   margin-bottom: .5em;
 }
@@ -107,7 +107,7 @@ section {
           column-gap: 2em;
   font-size: .9em;
 }
-#sectionContainer {
+.sectionContainer {
   margin: 3em 1em 0;
 }
 #aboutContainer {
