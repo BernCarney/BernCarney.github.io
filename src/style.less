@@ -52,10 +52,7 @@ h2 {
   font-size: 2em;
   font-weight: 300;
   margin-bottom: .5em;
-
-  @media @med-view {
-    margin-top: 1em;
-  }
+  transition: .25s ease-in;
 }
 
 h3 {
@@ -85,13 +82,18 @@ header {
   text-align: center;
   padding-top: .15em;
   
+  @media @med-view {
+    min-height: 30em;
+    background-image: url("../img/compressed/meProfileImg.jpg");
+  }
+  
   .name-title {
     margin: 0 auto 0 auto;
     padding-left: 11%;
     font: normal 2.5em @logoFont;
     
     @media @med-view {
-      display: none;
+      margin-top: 1em;
     }
   }
   
@@ -104,7 +106,7 @@ header {
     } 
     
     @media @med-view {
-      display: none;
+
     }
   }
   
