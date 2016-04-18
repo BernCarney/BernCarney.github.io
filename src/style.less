@@ -1,22 +1,26 @@
 // Import Fonts
 @import url(https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic|Open+Sans+Condensed:300,300italic,700);
 
-// Declare Text Variables
-// Consider differed header font like Lato or Open Sans
+// Text Variables
 @headerFont: 'Open Sans Condensed', sans-serif;
 @bodyFont: 'Tinos', serif;
 @logoFont: @headerFont;
 
-// Declare Color Variables
+// Color Variables
 @lightGray: #eee;
 @medGray: #666;
 @darkGray: #343434;
 @white: #fff;
 @highlight: #AEEE00;
 
+<<<<<<< HEAD
 // Declare Media Query Variables
 @med-view: ~"only screen and (min-width: 500px)";
 
+=======
+// Media Query
+@view-md: ~"only screen and (min-width: 31.25em)"; // 500px / 16px
+>>>>>>> refs/remotes/origin/master
 
 // Standar Ground Zero
 * {
@@ -78,7 +82,7 @@ li {
 
 // Header Styling
 header {
-  background-image: url("../img/meProfileImg-mobile.jpg");
+  background-image: url("../img/compressed/meProfileImg-mobile.jpg");
   background-repeat: no-repeat;
   min-height: 18em;
   background-size: cover;
