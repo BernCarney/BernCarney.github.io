@@ -16,6 +16,14 @@ body {
   color: #ffffff;
   font: normal 0.9em 'Tinos', serif;
   overflow-x: hidden;
+  background-color: #eeeeee;
+}
+@media only screen and (min-width: 500px) {
+  .page-wrapper {
+    max-width: 62.5em;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 2px #343434;
+  }
 }
 h2,
 h3,
@@ -62,7 +70,7 @@ header {
 }
 @media only screen and (min-width: 500px) {
   header {
-    min-height: 30em;
+    height: 31.25em;
     background-image: url("../img/compressed/meProfileImg.jpg");
   }
 }
@@ -73,7 +81,7 @@ header .name-title {
 }
 @media only screen and (min-width: 500px) {
   header .name-title {
-    margin-top: 1em;
+    margin-top: .75em;
   }
 }
 header #headerSocial {
@@ -119,6 +127,8 @@ nav ul li:last-of-type {
     position: fixed;
     background-color: rgba(52, 52, 52, 0.25);
     text-align: right;
+    margin: 0 auto;
+    max-width: 62.5em;
   }
   nav ul li {
     display: inline-block;

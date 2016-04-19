@@ -32,6 +32,15 @@ body {
   color: @white;
   font: normal .9em @bodyFont;
   overflow-x: hidden;
+  background-color: @lightGray;
+}
+
+.page-wrapper {
+  @media @med-view {
+    max-width: 1000/16em;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 2px rgb(52, 52, 52);
+  }
 }
 
 h2, h3, h4 {
@@ -83,7 +92,7 @@ header {
   padding-top: .15em;
   
   @media @med-view {
-    min-height: 30em;
+    height: 500/16em;
     background-image: url("../img/compressed/meProfileImg.jpg");
   }
   
@@ -93,7 +102,7 @@ header {
     font: normal 2.5em @logoFont;
     
     @media @med-view {
-      margin-top: 1em;
+      margin-top: .75em;
     }
   }
   
@@ -150,11 +159,13 @@ nav {
   
   @media @med-view {
     ul {
-      left: auto;
+      left: auto; 
       top: 0;
       position: fixed;
       background-color: rgba(52, 52, 52, 0.25);
       text-align: right;
+      margin: 0 auto;
+      max-width: 1000/16em;
           
       li {
         display: inline-block;
