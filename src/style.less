@@ -111,11 +111,14 @@ header {
     padding-left: 10%;
     
     a {
-      color: rgba(255, 255, 255, 1);
+      color: rgba(255, 255, 255, .5);
     } 
+    a:hover {
+      color: rgba(255, 255, 255, 1);
+    }
     
     @media @med-view {
-
+      font-size: 1.25em;
     }
   }
   
@@ -290,10 +293,15 @@ footer {
   text-align: center;
   font: normal .9em @headerFont;
   padding: 1.75em;
+  line-height: 2em;
   
   a {
     text-decoration: none;
     color: @medGray;
     font-size: 1.15em;
+  }
+  a:hover {
+    color: @lightGray;
+    font-size: 1.25em;
   }
 }

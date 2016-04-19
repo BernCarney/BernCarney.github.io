@@ -89,7 +89,15 @@ header #headerSocial {
   padding-left: 10%;
 }
 header #headerSocial a {
+  color: rgba(255, 255, 255, 0.5);
+}
+header #headerSocial a:hover {
   color: #ffffff;
+}
+@media only screen and (min-width: 500px) {
+  header #headerSocial {
+    font-size: 1.25em;
+  }
 }
 nav a {
   color: #ffffff;
@@ -234,9 +242,14 @@ footer {
   text-align: center;
   font: normal 0.9em 'Open Sans Condensed', sans-serif;
   padding: 1.75em;
+  line-height: 2em;
 }
 footer a {
   text-decoration: none;
   color: #666666;
   font-size: 1.15em;
+}
+footer a:hover {
+  color: #eeeeee;
+  font-size: 1.25em;
 }
