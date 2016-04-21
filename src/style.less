@@ -6,15 +6,44 @@
 @bodyFont: 'Tinos', serif;
 @logoFont: @headerFont;
 
-// Color Variables
+// Old Color Variables
 @lightGray: #eee;
 @medGray: #666;
 @darkGray: #343434;
 @white: #fff;
 @highlight: #AEEE00;
 
-// Media Query
-@view-md: ~"only screen and (min-width: 31.25em)"; // 500px / 16px
+// New Color Variables
+@color-mandy: #E64C66;
+@color-mountain-meadow: #1BBC9B;
+@color-pickled-bluewood: #2D3E50;
+@color-alto: #D6D6D6;
+@color-wild-sand: #F5F5F5;
+@color-white: #fff;
+
+// Color Declarations
+@body-background-color:;
+@section-background-color-light:;
+@section-background-color-dark:;
+@footer-background-color:;
+@form-background-color:;
+@form-hover-background-color:;
+@text-main-color:;
+@text-header-color:;
+@text-form-color:;
+@text-form-submit-hover-color:;
+@text-footer-color:;
+@link-header-social-color:;
+@link-hover-header-social-color:;
+@link-nav-color:;
+@link-hover-nav-color:;
+@link-footer-social-color:;
+@link-hover-footer-social-color:;
+
+
+
+// Declare Media Query Variables
+@med-view: ~"only screen and (min-width: 500px)";
 
 // Standar Ground Zero
 * {
@@ -32,6 +61,15 @@ body {
   color: @white;
   font: normal .9em @bodyFont;
   overflow-x: hidden;
+  background-color: @lightGray;
+}
+
+.page-wrapper {
+  @media @med-view {
+    max-width: 1000/16em;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 2px rgb(52, 52, 52);
+  }
 }
 
 h2, h3, h4 {
@@ -52,6 +90,7 @@ h2 {
   font-size: 2em;
   font-weight: 300;
   margin-bottom: .5em;
+  transition: .25s ease-in;
 }
 
 h3 {
@@ -81,10 +120,19 @@ header {
   text-align: center;
   padding-top: .15em;
   
-  h1 {
+  @media @med-view {
+    height: 500/16em;
+    background-image: url("../img/compressed/meProfileImg.jpg");
+  }
+  
+  .name-title {
     margin: 0 auto 0 auto;
     padding-left: 11%;
     font: normal 2.5em @logoFont;
+    
+    @media @med-view {
+      margin-top: .75em;
+    }
   }
   
   #headerSocial {
@@ -92,8 +140,15 @@ header {
     padding-left: 10%;
     
     a {
+      color: rgba(255, 255, 255, .5);
+    } 
+    a:hover {
       color: rgba(255, 255, 255, 1);
-    }  
+    }
+    
+    @media @med-view {
+      font-size: 1.25em;
+    }
   }
   
 }
@@ -134,6 +189,36 @@ nav {
     }
   }
   
+  @media @med-view {
+    ul {
+      left: auto; 
+      top: 0;
+      position: fixed;
+      background-color: rgba(52, 52, 52, 0.25);
+      text-align: right;
+      margin: 0 auto;
+      max-width: 1000/16em;
+          
+      li {
+        display: inline-block;
+        background-color: rgba(52, 52, 52, 0);
+        padding: .45em .75em;
+      }
+      
+      li:first-of-type {
+        border-top: none;
+      }
+
+      li:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+  
+}
+
+.nav-darken {
+  background-color: rgba(52, 52, 52, 0.75);
 }
 
 .menuButton {
@@ -145,6 +230,10 @@ nav {
   width: auto;
   padding: 0 .25em;
   background-color: rgba( 43, 43, 43, 0.75 );
+  
+  @media @med-view{
+    display: none;
+  }
 }
 
 .toggleMenu {
@@ -233,10 +322,15 @@ footer {
   text-align: center;
   font: normal .9em @headerFont;
   padding: 1.75em;
+  line-height: 2em;
   
   a {
     text-decoration: none;
     color: @medGray;
     font-size: 1.15em;
+  }
+  a:hover {
+    color: @lightGray;
+    font-size: 1.25em;
   }
 }
