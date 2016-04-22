@@ -253,3 +253,37 @@ footer a:hover {
   color: #eeeeee;
   font-size: 1.25em;
 }
+#thanks-page {
+  height: 100%;
+}
+#thanks-page-body {
+  height: 100%;
+  background-color: #f5f5f5;
+  color: #2d3e50;
+}
+.thanks-page-wrapper {
+  position: relative;
+  top: 15%;
+  left: auto;
+  right: auto;
+  height: 100%;
+  text-align: center;
+}
+.thanks-message {
+  font: normal 3.5em 'Open Sans Condensed', sans-serif;
+  margin-bottom: .5em;
+}
+.thanks-gohome,
+.thanks-social {
+  font: normal 1.5em 'Open Sans Condensed', sans-serif;
+  padding: .1em;
+}
+.thanks-gohome a,
+.thanks-social a {
+  text-decoration: none;
+  color: #e64c66;
+}
+.thanks-gohome a:hover,
+.thanks-social a:hover {
+  color: #2d3e50;
+}

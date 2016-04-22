@@ -28,19 +28,21 @@
 @footer-background-color:;
 @form-background-color:;
 @form-hover-background-color:;
+@thanks-background-color: @color-wild-sand;
 @text-main-color:;
 @text-header-color:;
 @text-form-color:;
 @text-form-submit-hover-color:;
 @text-footer-color:;
+@text-thanks-color:@color-pickled-bluewood;
 @link-header-social-color:;
 @link-hover-header-social-color:;
 @link-nav-color:;
 @link-hover-nav-color:;
 @link-footer-social-color:;
 @link-hover-footer-social-color:;
-
-
+@link-thanks-color: @color-mandy;
+@link-hover-thanks-color: @color-pickled-bluewood;
 
 // Declare Media Query Variables
 @med-view: ~"only screen and (min-width: 500px)";
@@ -332,5 +334,45 @@ footer {
   a:hover {
     color: @lightGray;
     font-size: 1.25em;
+  }
+}
+
+// Thanks Page Styling
+#thanks-page {
+  height: 100%;
+}
+
+#thanks-page-body {
+  height: 100%;
+  background-color: @thanks-background-color;
+  color: @text-thanks-color;
+}
+
+.thanks-page-wrapper {
+	// Position
+  position: relative; 
+  top: 15%;
+  left: auto;
+  right: auto;
+  height: 100%;
+  text-align: center;
+}
+
+.thanks-message {
+  font: normal 3.5em @headerFont;
+  margin-bottom: .5em;
+}
+
+.thanks-gohome, .thanks-social {
+  font: normal 1.5em @headerFont;
+  padding: .1em;
+	
+  a {
+    text-decoration: none;
+    color: @link-thanks-color;
+  }
+  
+  a:hover {
+    color: @link-hover-thanks-color;
   }
 }
