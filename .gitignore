@@ -3,6 +3,6 @@ koala-config.json
 *.psd
 ColorSwaps.png
 backup/
-/css/style.css
-/css/social-icons.css
-/css/normalize.css
+css/style.css
+css/social-icons.css
+css/normalize.css
