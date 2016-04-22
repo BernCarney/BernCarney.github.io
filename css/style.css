@@ -208,7 +208,6 @@ form {
 }
 form input {
   height: 2.5em;
-  text-transform: uppercase;
 }
 form textarea {
   overflow: auto;
@@ -217,7 +216,7 @@ form textarea {
 form input,
 form textarea {
   border: 0.0625em solid #343434;
-  font: normal 1em 'Open Sans Condensed', sans-serif;
+  font: normal 1.1em 'Open Sans Condensed', sans-serif;
   width: 100%;
   padding: 0.375em 0.75em;
   margin: 0.375em auto;
