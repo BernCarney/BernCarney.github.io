@@ -1,8 +1,1 @@
-koala-config.json
-*.zip
-*.psd
-ColorSwaps.png
-backup/
-css/style.css
-css/social-icons.css
-css/normalize.css
+public
