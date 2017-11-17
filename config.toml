@@ -4,7 +4,7 @@ title = "Bern Carney"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
-disqusShortname = "shortname"
+disqusShortname = ""
 googleAnalytics = ""
 pluralizeListTitles = false
 
@@ -50,11 +50,11 @@ pluralizeListTitles = false
 # prefer to use. See Staticman.yml for additional settings.
 [params.staticman]
   # Sets Statiman to be active
-  staticman = false
+  staticman = true
   # Sets the location for Staticman to connect to
-  username  = ""
-  repo      = ""
-  branch    = ""
+  username  = "BernCarney"
+  repo      = "BernCarney.github.io"
+  branch    = "v2.0"
 
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
