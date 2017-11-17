@@ -4,17 +4,11 @@
     {{ partial "navbar" . }}
     <!-- Main -->
     <div id="main">
-        <!-- {{ if eq .Section "resume" }} -->
-          {{ $paginator := .Paginate .Data.Pages 25 }}
-          {{ range .Paginator.Pages.Reverse }}
-              {{ .Render "content-list" }}
-          {{ end }}
-        <!-- {{ else }}
-          {{ $paginator := .Paginate .Data.Pages }}
-          {{ range .Paginator.Pages }}
-              {{ .Render "content-list" }}
-          {{ end }}
-        {{ end }} -->
+        {{ $paginator := .Paginate .Data.Pages 25 }}
+        {{ range .Paginator.Pages.Reverse }}
+          {{ .Render "content-list" }}
+        {{ end }}
+
         {{ partial "pagination" . }}
     </div>
     {{ partial "sidebar" . }}
