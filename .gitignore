@@ -1,3 +1,10 @@
+# keep public split into seperate branch
 public
+
+# ignore resume until all updated
 2017 Bernard Carney*
 content/resume/2017_resume.json
+
+# ignore dummy posts/content during development
+content/blog/*
+content/resume/*
