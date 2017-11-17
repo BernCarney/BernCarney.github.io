@@ -6,7 +6,7 @@
     <div id="main">
         <!-- {{ if eq .Section "resume" }} -->
           {{ $paginator := .Paginate .Data.Pages 25 }}
-          {{ range .Paginator.Pages }}
+          {{ range .Paginator.Pages.Reverse }}
               {{ .Render "content-list" }}
           {{ end }}
         <!-- {{ else }}
