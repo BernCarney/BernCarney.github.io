@@ -8,3 +8,6 @@ content/resume/2017_resume.json
 # ignore dummy posts/content during development
 content/blog/*
 content/resume/*
+
+# ignore bfg cleaner
+bfg*
