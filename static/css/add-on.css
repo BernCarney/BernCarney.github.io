@@ -4,3 +4,15 @@
   is an official part of the theme (ex. Pull Requests) should be included in main.css
   within the formating given.
 */
+
+
+.resume ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.resume ul li {
+  float: left;
+}
