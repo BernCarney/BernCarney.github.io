@@ -3,10 +3,27 @@
   <!-- Main -->
   <div id="main">
     <ul class="resume">
-      <li>Test</li>
-      <li>Test</li>
-      <li>Test</li>
-      <li>Test</li>
+      {{ range $.Site.Data.resume.skills.hardskills }}
+      <li class="resume">{{ .skill }}</li>
+      {{ end }}
+    </ul>
+
+    <ul class="resume">
+      {{ range $.Site.Data.resume.skills.languages }}
+      <li class="resume">{{ .language }}</li>
+      {{ end }}
+    </ul>
+
+    <ul class="resume">
+      {{ range $.Site.Data.resume.skills.software }}
+      <li class="resume">{{ . }}</li>
+      {{ end }}
+    </ul>
+
+    <ul class="resume">
+      {{ range $.Site.Data.resume.skills.softskills }}
+      <li class="resume">{{ . }}</li>
+      {{ end }}
     </ul>
   </div>
   {{ partial "sidebar" . }}
