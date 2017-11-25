@@ -1,0 +1,19 @@
+outdoors:
+  - 'climbing'
+  - 'hiking'
+  - 'skiing'
+  - 'camping'
+
+indoors:
+  - 'games'
+  - 'tech projects'
+  - 'music'
+
+social:
+  - 'craft beer'
+  - 'farmer''s markets'
+  - 'park days'
+
+skill-builders:
+  - 'something'
+  - 'e-liquid mixing'
