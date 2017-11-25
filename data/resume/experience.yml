@@ -1,12 +1,12 @@
 jobs:
-  - professional:
+  - fulltime:
     # Apex Enerygy Solutions
     - position: Junior Partner
       company: Apex Energy Solutions
       dates: September 2017 - Present
       location: Denver, CO
       summary:
-      duties: '...'
+      duties:
 
     # Dynamic Solutions International
     - position: Sales Manager
@@ -75,7 +75,7 @@ jobs:
       clearance: Public Trust
       dates: January 2009 - May 2009
       location: Blacksburg, VA
-      summary: 'While attending Virginia Tech's school of business, I was presented with a unique opportunity to work with real companies. Automation Creation, Inc. was a small company located in Blacksburg, VA that we worked with to provide new and innovative ideas to grow their customer base and better serve their current clients. We worked with them to discuss their goals and market strategies and presented a comprehensive business plan at the conclusion several months of collaboration and research.'
+      summary: 'While attending Virginia Tech''s school of business, I was presented with a unique opportunity to work with real companies. Automation Creation, Inc. was a small company located in Blacksburg, VA that we worked with to provide new and innovative ideas to grow their customer base and better serve their current clients. We worked with them to discuss their goals and market strategies and presented a comprehensive business plan at the conclusion several months of collaboration and research.'
       duties:
         - 'Conducted industrial, competitive, and market analyses'
         - 'Researched pricing strategies, service enhancements, as well as networking and promotional opportunities'
@@ -83,7 +83,7 @@ jobs:
         - 'Assisted in creation of a marketing plan that fit its budget and business size'
         - 'Presented findings and recommendations to Operations Manager in an extensive presentation, as well as a comprehensive business report'
 
-  - part-time:
+  - parttime:
     # Starbucks
     - position: Barista
       company: Starbucks, Inc.
@@ -92,4 +92,9 @@ jobs:
     # Amazon Flex
     - position: Driver
       company: Amazon
+      location: Denver, CO
+
+    # VaprWear
+    - position: Model & Consultant
+      company: VaprWear
       location: Denver, CO
