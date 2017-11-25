@@ -1,50 +1,95 @@
 jobs:
   - professional:
     # Apex Enerygy Solutions
-    - position: ''
-      company: ''
-      dates: ''
-      duties: ''
+    - position: Junior Partner
+      company: Apex Energy Solutions
+      dates: September 2017 - Present
+      location: Denver, CO
+      summary:
+      duties: '...'
 
     # Dynamic Solutions International
-    - position: ''
-      company: ''
-      dates: ''
-      duties: ''
+    - position: Sales Manager
+      company: Dynamic Solutions International
+      dates: February 2014 - August 2015
+      location: Englewood, CO
+      summary: 'As a sales manager in a small organization, communication and efficient time management were paramount. Whether it was attracting new clientele at trade shows, or managing relationships with partners and customers, being a sales manager at Dynamic Solutions International always kept me engaged.'
+      duties:
+        - 'Assisted in implementation, customization, and testing of Salesforce for the company’s operations and sales groups'
+        - 'Managed over 30 client relationships for all financial customers within the U.S. ensuring that technical issues and trouble tickets were being handled in a timely manner'
+        - 'Attended trade shows to maintain current customer relationships as well as attract new clientele'
+        - 'Supported and oversaw reseller and vendor partner relationships for the U.S. market space'
+        - 'Oversaw projects from sale through implementation and achieved 90% of 2015 sales goal of $750k by end of Q2'
 
-    # USGS
-    - position: ''
-      company: ''
-      dates: ''
-      duties: ''
+    # Department of the Interior (contracted through COMSO, Inc.)
+    - position: Project Manager
+      company: 'Department of the Interior (contracted through COMSO, Inc.)'
+      clearance: Public Trust
+      dates: May 2012 - January 2014
+      location: Lakewood, CO
+      summary: 'With COMSO, Inc. I streamlined software development processes and created more efficient and transparent means to track ongoing work. In what started as a segmented development unit, I helped create a close-knit and efficient group. We shifted to an agile development methodology and I introduced tools such as JIRA to form a more structured and effective team.'
+      duties:
+        - 'Lead development teams as Scrum Master for two of the U.S. Geological Survey’s large public facing projects, Ocean Biogeographic Information System (OBIS-USA) and Biodiversity Information Serving Our Nation (BISON)'
+        - 'Implemented and administered JIRA software development tracking system for USGS’ Core Science Analytics and Synthesis (CSAS) group for several projects ranging from software development to systems administration'
+        - 'Managed introduction to agile software development for Core Science Analytics and Synthesis (CSAS) group through full software development life-cycle'
+        - 'Authored several large scale project plans for high visibility public facing projects within the U.S. Geological Survey'
 
     # Level 3
-    - position: ''
-      company: ''
-      dates: ''
-      duties: ''
+    - position: Revenue Assurance Analyst
+      company: Level 3 Communications
+      dates: February 2012 - April 2012
+      location: Broomfield, CO
+      summary:
+      duties:
+        - ''
 
-    # DoD
-    - position: ''
-      company: ''
-      dates: ''
-      duties: ''
+    # Department of Defense (contracted through Apptis, Inc.)
+    - position: Project Control Specialist
+      company: 'Department of Defense (contracted through Apptis, Inc.)'
+      clearance: Pended Secret
+      dates: September 2010 - July 2011
+      location: Falls Church, VA
+      summary: 'In my time as a Project Control Specialist, I managed large multi-million dollar contracts with many moving pieces. By maintaining close relationships with program directors as well as government contractors, I was able to effectively oversee complicated projects with strict budgets.'
+      duties:
+        - 'Tracked progress and managed budget forecasts for several $42M+ contract environments'
+        - 'Managed and coordinated budget submissions, budget allocations, procurement requests, and financial execution of research and development programs'
+        - 'Reviewed and created budget, spend plans, and future projections to determine performance-based strategies'
+        - 'Coordinated and implemented budget estimates for the future year programs'
 
-    # DoJ
-    - position: ''
-      company: ''
-      dates: ''
-      duties: ''
+    # Department of Justice (contracted through Avaya Government Solutions)
+    - position: Program Support
+      company: 'Department of Justice (contracted through Avaya Government Solutions)'
+      clearance: Public Trust
+      dates: September 2009 - August 2010
+      location: Falls Church, VA
+      summary: 'After graduating with a degree in business management from Virginia Tech, I quickly applied what I had learned in a program support role at Avaya Government Solutions. In a fast paced work environment I developed and maintained project budgets, worked closely with accounting and management, and supported operational units on a daily basis. My desire to learn about every facet of our business helped me quickly advance in my career.'
+      duties:
+        - 'Served as liaison with various Department of Justice staff to facilitate communication between all business units including open issues, project prioritization, conflict resolutions, project requests, and resource allocation, to ensure standards of quality in line with company goals'
+        - 'Coordinated with Program Director and Managers to identify and estimate unexpected cost of project risks'
+        - 'Analyzed data to construct financial models for future performance and cost projections'
+        - 'Worked with subcontractors and accounting personnel to resolve issues related to subcontractor invoices and payments'
+
+    # Automation Creation Inc.
+    - position: Program Support
+      company: 'Department of Justice (contracted through Avaya Government Solutions)'
+      clearance: Public Trust
+      dates: January 2009 - May 2009
+      location: Blacksburg, VA
+      summary: 'While attending Virginia Tech's school of business, I was presented with a unique opportunity to work with real companies. Automation Creation, Inc. was a small company located in Blacksburg, VA that we worked with to provide new and innovative ideas to grow their customer base and better serve their current clients. We worked with them to discuss their goals and market strategies and presented a comprehensive business plan at the conclusion several months of collaboration and research.'
+      duties:
+        - 'Conducted industrial, competitive, and market analyses'
+        - 'Researched pricing strategies, service enhancements, as well as networking and promotional opportunities'
+        - 'Reported findings and progress to Operations Manager in weekly status reports'
+        - 'Assisted in creation of a marketing plan that fit its budget and business size'
+        - 'Presented findings and recommendations to Operations Manager in an extensive presentation, as well as a comprehensive business report'
 
   - part-time:
     # Starbucks
-    - position: ''
-      company: ''
-      dates: ''
-      duties: ''
+    - position: Barista
+      company: Starbucks, Inc.
+      location: Denver, CO
 
     # Amazon Flex
-    - position: ''
-      company: ''
-      dates: ''
-      duties: ''
+    - position: Driver
+      company: Amazon
+      location: Denver, CO
