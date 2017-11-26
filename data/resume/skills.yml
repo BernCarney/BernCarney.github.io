@@ -28,9 +28,6 @@ languages:
   - language: Python
     level:
 
-  - language: Python
-    level:
-
   - language: YAML
     level:
 

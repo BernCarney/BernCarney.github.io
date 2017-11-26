@@ -1,23 +1,32 @@
-# Media Server
-- project: Home Automated Media Solution
+personal:
+  # Home automated Media Solution
+  - name: Home Automated Media Solution
+    description: ''
 
-# Dockerized Dev Environment on Windows
-- project: Dockerized Development Environment for Windows
+  # Dockerized Development Environment for Windows
+  - name: Dockerized Development Environment for Windows
+    description: ''
 
-# Personal Static Site v2.0
-- project: Personal Static Site
+  # Personal Static Site v2.0
+  - name: Personal Static Site
+    description: ''
 
-# Learn Python
-- project: Learn Python
+  # Learn Python
+  - name: Learn Python
+    description: ''
 
-# Learn VBA
-- project: Learn VBA
+  # Learn VBA
+  - name: Learn VBA
+    description: ''
 
-# Learn PowerShell
-- project: Learn PowerShell
+  # Learn PowerShell
+  - name: Learn PowerShell
+    description: ''
 
-# More Extensive Use of Git & Github
-- project: Version Control of Personal Projects and Community Projects
+  # More Extensive Use of Git & Github
+  - name: Version Control of Personal Projects and Community Projects
+    description: ''
 
-# Gist Snippets
-- project: Better Documentation Through Gists
+  # Gist Snippets
+  - name: Better Documentation Through Gists
+    description: ''
