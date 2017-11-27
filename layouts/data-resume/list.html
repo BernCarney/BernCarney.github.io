@@ -3,9 +3,9 @@
   <!-- Main -->
   <div id="main">
     <!-- Personal -->
-    <h3 style="display:inline">Current Location:</h3><h4>{{ $.Site.Data.resume.personal.location.current }}</h4>
-    <h3 style="display:inline">Hometown:</h3><h4>{{ $.Site.Data.resume.personal.location.hometown }}</h4>
-    <h3 style="display:inline">Clearances:</h3><h4>PSI: {{ $.Site.Data.resume.personal.clearance.psi }}</h4>
+    <h3>Current Location:</h3><h4>{{ $.Site.Data.resume.personal.location.current }}</h4>
+    <h3>Hometown:</h3><h4>{{ $.Site.Data.resume.personal.location.hometown }}</h4>
+    <h3>Clearances:</h3><h4>PSI: {{ $.Site.Data.resume.personal.clearance.psi }}</h4>
     <ul>
     {{ range $.Site.Data.resume.personal.clearance.current }}
       <li>{{ . }}</li>
@@ -15,38 +15,38 @@
     <!-- Skills -->
     <h2 class="align-center box">Skills</h2>
     <h4>Hard Skills</h4>
-    <ul class="resume">
+    <ul>
       {{ range $.Site.Data.resume.skills.hardskills }}
-      <li class="resume">{{ .skill }}</li>
+      <li>{{ .skill }}</li>
       {{ end }}
     </ul>
 
     <h4>Languages</h4>
-    <ul class="resume">
+    <ul>
       {{ range $.Site.Data.resume.skills.languages }}
-      <li class="resume">{{ .language }}</li>
+      <li>{{ .language }}</li>
       {{ end }}
     </ul>
 
     <h4>Software</h4>
-    <ul class="resume">
+    <ul>
       {{ range $.Site.Data.resume.skills.software }}
-      <li class="resume">{{ . }}</li>
+      <li>{{ . }}</li>
       {{ end }}
     </ul>
 
     <h4>Soft Skills</h4>
-    <ul class="resume">
+    <ul>
       {{ range $.Site.Data.resume.skills.softskills }}
-      <li class="resume">{{ . }}</li>
+      <li>{{ . }}</li>
       {{ end }}
     </ul>
 
     <!-- Experience -->
     <h2 class="align-center box">Full-Time Positions</h2>
     {{ range $.Site.Data.resume.experience.fulltime }}
-      <h1 style="display:inline">{{ .position }}<span style="float:right"><em class="author">{{ .dates }}</em></span></h1>
-      <h4>{{ .company }}<span style="float:right">{{ .location }}</span></h4>
+      <h1>{{ .position }}<span><em>{{ .dates }}</em></span></h1>
+      <h4>{{ .company }}<span>{{ .location }}</span></h4>
       <p>{{ .summary }}</p>
       <ul>
         {{ range $duty := .duties }}
@@ -57,17 +57,17 @@
     {{ end }}
 
     <h2 class="align-center box">Part-Time Positions</h2>
-    <div class="align-center">
+    <div>
       {{ range $.Site.Data.resume.experience.parttime }}
-        <h3 style="display:inline">{{ .position }}</h3><h4>{{ .company }}</h4>
+        <h3>{{ .position }}</h3><h4>{{ .company }}</h4>
       {{ end }}
     </div>
 
     <!-- Volunteer -->
     <h2 class="align-center box">Volunteer</h2>
-    <div class="align-center">
+    <div>
       {{ range $.Site.Data.resume.volunteer.positions }}
-        <h3 style="display:inline">{{ .place }}</h3><h4>{{ .date }}</h4>
+        <h3>{{ .place }}</h3><h4>{{ .date }}</h4>
       {{ end }}
     </div>
 
@@ -81,38 +81,38 @@
     <!-- Hobbies -->
     <h2 class="align-center box">Hobbies</h2>
     <h4>Outdoors</h4>
-    <ul class="resume">
+    <ul>
       {{ range $.Site.Data.resume.hobbies.outdoors }}
-      <li class="resume">{{ . }}</li>
+      <li>{{ . }}</li>
       {{ end }}
     </ul>
 
     <h4>Indoors</h4>
-    <ul class="resume">
+    <ul>
       {{ range $.Site.Data.resume.hobbies.indoors }}
-      <li class="resume">{{ . }}</li>
+      <li>{{ . }}</li>
       {{ end }}
     </ul>
 
     <h4>Social</h4>
-    <ul class="resume">
+    <ul>
       {{ range $.Site.Data.resume.hobbies.social }}
-      <li class="resume">{{ . }}</li>
+      <li>{{ . }}</li>
       {{ end }}
     </ul>
 
     <h4>Skill Builders</h4>
-    <ul class="resume">
+    <ul>
       {{ range $.Site.Data.resume.hobbies.skillbuilders }}
-      <li class="resume">{{ . }}</li>
+      <li>{{ . }}</li>
       {{ end }}
     </ul>
 
     <!-- Education -->
     <h2 class="align-center box">Education</h2>
     {{ range $.Site.Data.resume.education.schools }}
-      <h3 style="display:inline">{{ .school }}</h3> <h4 style="float:right" class="author">{{ .dates }}</h4>
-      <h4>{{ .degree }} <span style="float:right">{{ .location }}</span></h4>
+      <h3>{{ .school }}</h3> <h4>{{ .dates }}</h4>
+      <h4>{{ .degree }} <span>{{ .location }}</span></h4>
     {{ end }}
   </div>
   {{ partial "sidebar" . }}
