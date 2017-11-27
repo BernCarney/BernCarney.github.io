@@ -3,45 +3,64 @@
   <!-- Main -->
   <div id="main">
     <!-- Personal -->
-    <h3>Current Location:</h3><h4>{{ $.Site.Data.resume.personal.location.current }}</h4>
-    <h3>Hometown:</h3><h4>{{ $.Site.Data.resume.personal.location.hometown }}</h4>
+    <div style="width: 100%; display:flex; justify-content:space-between; padding: 0 2em .5em 2em">
+      <div style="">
+        <h3>Current Location</h3>
+        <h4>{{ $.Site.Data.resume.personal.location.current }}</h4>
+      </div>
+
+      <div style="">
+      <h3>Hometown</h3>
+      <h4>{{ $.Site.Data.resume.personal.location.hometown }}</h4>
+      </div>
+    </div>
+    {{/* <div style="width: 100%" class="align-center">
     <h3>Clearances:</h3><h4>PSI: {{ $.Site.Data.resume.personal.clearance.psi }}</h4>
     <ul>
-    {{ range $.Site.Data.resume.personal.clearance.current }}
-      <li>{{ . }}</li>
-    {{ end }}
+      {{ range $.Site.Data.resume.personal.clearance.current }}
+        <li>{{ . }}</li>
+      {{ end }}
     </ul>
+    </div> */}}
 
     <!-- Skills -->
     <h2 class="align-center box">Skills</h2>
-    <div class="skills">
-      <h4>Hard Skills</h4>
-      <ul>
-        {{ range $.Site.Data.resume.skills.hardskills }}
-        <li>{{ .skill }}</li>
-        {{ end }}
-      </ul>
+    <div style="width: 100%; display:flex; justify-content:space-between; padding: 0 2em .5em 2em; flex-wrap:wrap">
+      <div style="width: 100%">
+        <h4 class="align-center">Hard Skills</h4>
+        <ul style="display:flex; flex-wrap:wrap; justify-content: center">
+          {{ range $.Site.Data.resume.skills.hardskills }}
+          <li style="margin: 0 1em 0 1em">{{ .skill }}</li>
+          {{ end }}
+        </ul>
+      </div>
 
-      <h4>Languages</h4>
-      <ul>
-        {{ range $.Site.Data.resume.skills.languages }}
-        <li>{{ .language }}</li>
-        {{ end }}
-      </ul>
+      <div style="width: 100%">
+        <h4 class="align-center">Languages</h4>
+        <ul style="display:flex; flex-wrap:wrap; justify-content: center">
+          {{ range $.Site.Data.resume.skills.languages }}
+          <li style="margin: 0 1em 0 1em">{{ .language }}</li>
+          {{ end }}
+        </ul>
+      </div>
 
-      <h4>Software</h4>
-      <ul>
-        {{ range $.Site.Data.resume.skills.software }}
-        <li>{{ . }}</li>
-        {{ end }}
-      </ul>
+      <div style="width: 100%">
+        <h4 class="align-center">Software</h4>
+        <ul style="display:flex; flex-wrap:wrap; justify-content: center">
+          {{ range $.Site.Data.resume.skills.software }}
+          <li style="margin: 0 1em 0 1em">{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
 
-      <h4>Soft Skills</h4>
-      <ul>
-        {{ range $.Site.Data.resume.skills.softskills }}
-        <li>{{ . }}</li>
-        {{ end }}
-      </ul>
+      <div style="width: 100%">
+        <h4 class="align-center">Soft Skills</h4>
+        <ul style="display:flex; flex-wrap:wrap; justify-content: center">
+          {{ range $.Site.Data.resume.skills.softskills }}
+          <li style="margin: 0 1em 0 1em">{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
     </div>
 
     <!-- Experience -->
@@ -125,4 +144,4 @@
       {{ end }}
     </div>
   </div>
-  {{ partial "sclassebar" . }}
+  {{ partial "sidebar" . }}
