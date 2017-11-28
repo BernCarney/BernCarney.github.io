@@ -26,7 +26,6 @@
     </ul>
     */}}
 
-    <!-- TODO: Style -->
     <!-- Skills -->
     <h2 class="align-center box">Skills</h2>
     <div class="flex-full flex-wrap">
@@ -67,21 +66,23 @@
       </div>
     </div>
 
-    <!-- TODO: Style -->
     <!-- Experience -->
-    <h2 class="align-center box">Full-Time Positions</h2>
-    <div class="experience">
+    <h2 class="align-center box no-marg">Full-Time Positions</h2>
+    <div class="full">
       {{ range $.Site.Data.resume.experience.fulltime }}
-        <h1>{{ .position }}<span><em>{{ .dates }}</em></span></h1>
-        <h4>{{ .company }}<span>{{ .location }}</span></h4>
-        <p>{{ .summary }}</p>
-        <ul>
-          {{ range $duty := .duties }}
-          <li>{{ $duty }}</li>
-          {{ end }}
-        </ul>
-        <hr class="major">
+        <div class="job">
+          <h3>{{ .position }},</h3> {{ .company }}
+          <p class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</p>
+          <p>{{ .summary }}</p>
+          <ul>
+            {{ range $duty := .duties }}
+            <li>{{ $duty }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        <hr>
       {{ end }}
+
     </div>
 
     <h2 class="align-center box">Part-Time Positions</h2>

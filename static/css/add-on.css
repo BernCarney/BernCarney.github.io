@@ -4,23 +4,28 @@
  * Anything that is an official part of the theme (ex. Pull Requests) should be
  * included in main.css within the formating given.
  */
+body, input, select, textarea {
+  font-family: font-family: "Barlow Semi Condensed", Helvetica, sans-serif;
+  font-size: 11pt;
+  color: #606060
+}
 
 .flex-full {
+  -ms-flex-pack: justify;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 2em .5em;
+  justify-content: space-between;
+  padding: 0 2em .5em
 }
 
 .skills, .flex-full {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex
 }
 
 .skills, .flex-wrap {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .full, .flex-full {
@@ -28,11 +33,41 @@
 }
 
 .skills {
+  -ms-flex-pack: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center
 }
 
 .skills li{
-  margin: 0 1em;
+  margin: 0 1em
+}
+
+.job {
+  margin: 0em 1em
+}
+
+.job:first-of-type {
+  padding-top: 1em
+}
+
+.job h3 {
+  display:inline-flex;
+  font-size: 100%;
+  margin-bottom: 0
+}
+
+.no-marg {
+  margin: 0
+}
+
+.job p {
+  margin-bottom: 1em
+}
+
+.muted {
+  color: #a2a2a2
+}
+
+.job ul {
+  padding-left: 1.5em
 }
