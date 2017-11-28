@@ -3,61 +3,61 @@
   <!-- Main -->
   <div id="main">
     <!-- Personal -->
-    <div style="width: 100%; display:flex; justify-content:space-between; padding: 0 2em .5em 2em">
-      <div style="">
+    <div class="flex-full">
+      <div>
         <h3>Current Location</h3>
         <h4>{{ $.Site.Data.resume.personal.location.current }}</h4>
       </div>
 
-      <div style="">
+      <div>
       <h3>Hometown</h3>
       <h4>{{ $.Site.Data.resume.personal.location.hometown }}</h4>
       </div>
     </div>
-    {{/* <div style="width: 100%" class="align-center">
+    {{/*
     <h3>Clearances:</h3><h4>PSI: {{ $.Site.Data.resume.personal.clearance.psi }}</h4>
     <ul>
       {{ range $.Site.Data.resume.personal.clearance.current }}
         <li>{{ . }}</li>
       {{ end }}
     </ul>
-    </div> */}}
+    */}}
 
     <!-- Skills -->
     <h2 class="align-center box">Skills</h2>
-    <div style="width: 100%; display:flex; justify-content:space-between; padding: 0 2em .5em 2em; flex-wrap:wrap">
-      <div style="width: 100%">
+    <div class="flex-full flex-wrap">
+      <div class="full">
         <h4 class="align-center">Hard Skills</h4>
-        <ul style="display:flex; flex-wrap:wrap; justify-content: center">
+        <ul class="skills">
           {{ range $.Site.Data.resume.skills.hardskills }}
-          <li style="margin: 0 1em 0 1em">{{ .skill }}</li>
+          <li>{{ .skill }}</li>
           {{ end }}
         </ul>
       </div>
 
-      <div style="width: 100%">
+      <div class="full">
         <h4 class="align-center">Languages</h4>
-        <ul style="display:flex; flex-wrap:wrap; justify-content: center">
+        <ul class="skills">
           {{ range $.Site.Data.resume.skills.languages }}
-          <li style="margin: 0 1em 0 1em">{{ .language }}</li>
+          <li>{{ .language }}</li>
           {{ end }}
         </ul>
       </div>
 
-      <div style="width: 100%">
+      <div class="full">
         <h4 class="align-center">Software</h4>
-        <ul style="display:flex; flex-wrap:wrap; justify-content: center">
+        <ul class="skills">
           {{ range $.Site.Data.resume.skills.software }}
-          <li style="margin: 0 1em 0 1em">{{ . }}</li>
+          <li>{{ . }}</li>
           {{ end }}
         </ul>
       </div>
 
-      <div style="width: 100%">
+      <div class="full">
         <h4 class="align-center">Soft Skills</h4>
-        <ul style="display:flex; flex-wrap:wrap; justify-content: center">
+        <ul class="skills">
           {{ range $.Site.Data.resume.skills.softskills }}
-          <li style="margin: 0 1em 0 1em">{{ . }}</li>
+          <li>{{ . }}</li>
           {{ end }}
         </ul>
       </div>

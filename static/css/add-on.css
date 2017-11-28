@@ -4,3 +4,35 @@
  * Anything that is an official part of the theme (ex. Pull Requests) should be
  * included in main.css within the formating given.
  */
+
+.flex-full {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2em .5em;
+}
+
+.skills, .flex-full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills, .flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.full, .flex-full {
+  width:100%
+}
+
+.skills {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills li{
+  margin: 0 1em;
+}
