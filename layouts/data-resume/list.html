@@ -2,6 +2,7 @@
   {{ partial "navbar" . }}
   <!-- Main -->
   <div id="main">
+  <!-- IDEA: Consider folding each main section with jQuery or something -->
     <!-- Personal -->
     <div class="flex-full">
       <div>
@@ -14,6 +15,8 @@
       <h4>{{ $.Site.Data.resume.personal.location.hometown }}</h4>
       </div>
     </div>
+
+    <!-- TODO: Figure out a better way to display this info -->
     {{/*
     <h3>Clearances:</h3><h4>PSI: {{ $.Site.Data.resume.personal.clearance.psi }}</h4>
     <ul>
@@ -23,6 +26,7 @@
     </ul>
     */}}
 
+    <!-- TODO: Style -->
     <!-- Skills -->
     <h2 class="align-center box">Skills</h2>
     <div class="flex-full flex-wrap">
@@ -63,6 +67,7 @@
       </div>
     </div>
 
+    <!-- TODO: Style -->
     <!-- Experience -->
     <h2 class="align-center box">Full-Time Positions</h2>
     <div class="experience">
@@ -86,6 +91,7 @@
       {{ end }}
     </div>
 
+    <!-- TODO: Style -->
     <!-- Volunteer -->
     <h2 class="align-center box">Volunteer</h2>
     <div class="volunteer">
@@ -103,6 +109,7 @@
       {{ end }}
     </div>
 
+    <!-- TODO: Style -->
     <!-- Hobbies -->
     <h2 class="align-center box">Hobbies</h2>
     <div class="hobbies">
@@ -135,6 +142,7 @@
       </ul>
     </div>
 
+    <!-- TODO: Style -->
     <!-- Education -->
     <h2 class="align-center box">Education</h2>
     <div class="education">
