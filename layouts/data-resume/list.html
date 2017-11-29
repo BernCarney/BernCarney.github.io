@@ -1,156 +1,159 @@
+{{ partial "general-title" . }}
+
 {{ partial "header" . }}
-  {{ partial "navbar" . }}
-  <!-- Main -->
-  <div id="main">
-  <!-- IDEA: Consider folding each main section with jQuery or something -->
-    <!-- Personal -->
-    <div class="flex-full">
-      <div>
-        <h3>Current Location</h3>
-        <h4>{{ $.Site.Data.resume.personal.location.current }}</h4>
+    {{ partial "navbar" . }}
+    <!-- Main -->
+    <div id="main">
+      <!-- IDEA: Consider folding each main section with jQuery or something -->
+      <!-- Personal -->
+      <div class="flex-full">
+        <div>
+          <h3>Current Location</h3>
+          <h4>{{ $.Site.Data.resume.personal.location.current }}</h4>
+        </div>
+
+        <div>
+        <h3>Hometown</h3>
+        <h4>{{ $.Site.Data.resume.personal.location.hometown }}</h4>
+        </div>
       </div>
 
-      <div>
-      <h3>Hometown</h3>
-      <h4>{{ $.Site.Data.resume.personal.location.hometown }}</h4>
-      </div>
-    </div>
-
-    <!-- TODO: Figure out a better way to display this info -->
-    {{/*
-    <h3>Clearances:</h3><h4>PSI: {{ $.Site.Data.resume.personal.clearance.psi }}</h4>
-    <ul>
-      {{ range $.Site.Data.resume.personal.clearance.current }}
-        <li>{{ . }}</li>
-      {{ end }}
-    </ul>
-    */}}
-
-    <!-- Skills -->
-    <h2 class="align-center box">Skills</h2>
-    <div class="flex-full flex-wrap">
-      <div class="full">
-        <h4 class="align-center">Hard Skills</h4>
-        <ul class="skills">
-          {{ range $.Site.Data.resume.skills.hardskills }}
-          <li>{{ .skill }}</li>
-          {{ end }}
-        </ul>
-      </div>
-
-      <div class="full">
-        <h4 class="align-center">Languages</h4>
-        <ul class="skills">
-          {{ range $.Site.Data.resume.skills.languages }}
-          <li>{{ .language }}</li>
-          {{ end }}
-        </ul>
-      </div>
-
-      <div class="full">
-        <h4 class="align-center">Software</h4>
-        <ul class="skills">
-          {{ range $.Site.Data.resume.skills.software }}
+      <!-- TODO: Figure out a better way to display this info -->
+      {{/*
+      <h3>Clearances:</h3><h4>PSI: {{ $.Site.Data.resume.personal.clearance.psi }}</h4>
+      <ul>
+        {{ range $.Site.Data.resume.personal.clearance.current }}
           <li>{{ . }}</li>
-          {{ end }}
-        </ul>
-      </div>
+        {{ end }}
+      </ul>
+      */}}
 
-      <div class="full">
-        <h4 class="align-center">Soft Skills</h4>
-        <ul class="skills">
-          {{ range $.Site.Data.resume.skills.softskills }}
-          <li>{{ . }}</li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-
-    <!-- Experience -->
-    <h2 class="align-center box no-marg">Full-Time Positions</h2>
-    <div class="full">
-      {{ range $.Site.Data.resume.experience.fulltime }}
-        <div class="job">
-          <h3>{{ .position }},</h3> {{ .company }}
-          <p class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</p>
-          <p>{{ .summary }}</p>
-          <ul>
-            {{ range $duty := .duties }}
-            <li>{{ $duty }}</li>
+      <!-- Skills -->
+      <h2 class="align-center box">Skills</h2>
+      <div class="flex-full flex-wrap">
+        <div class="full">
+          <h4 class="align-center">Hard Skills</h4>
+          <ul class="skills">
+            {{ range $.Site.Data.resume.skills.hardskills }}
+            <li>{{ .skill }}</li>
             {{ end }}
           </ul>
         </div>
-        <hr>
-      {{ end }}
 
-    </div>
+        <div class="full">
+          <h4 class="align-center">Languages</h4>
+          <ul class="skills">
+            {{ range $.Site.Data.resume.skills.languages }}
+            <li>{{ .language }}</li>
+            {{ end }}
+          </ul>
+        </div>
 
-    <h2 class="align-center box">Part-Time Positions</h2>
-    <div class="experience">
-      {{ range $.Site.Data.resume.experience.parttime }}
-        <h3>{{ .position }}</h3><h4>{{ .company }}</h4>
-      {{ end }}
-    </div>
+        <div class="full">
+          <h4 class="align-center">Software</h4>
+          <ul class="skills">
+            {{ range $.Site.Data.resume.skills.software }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
 
-    <!-- TODO: Style -->
-    <!-- Volunteer -->
-    <h2 class="align-center box">Volunteer</h2>
-    <div class="volunteer">
-      {{ range $.Site.Data.resume.volunteer.positions }}
-        <h3>{{ .place }}</h3><h4>{{ .date }}</h4>
-      {{ end }}
-    </div>
+        <div class="full">
+          <h4 class="align-center">Soft Skills</h4>
+          <ul class="skills">
+            {{ range $.Site.Data.resume.skills.softskills }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
 
-    <!-- projects -->
-    <h2 class="align-center box">Projects</h2>
-    <div class="projects">
-      {{ range $.Site.Data.resume.projects.personal }}
-        <h4>{{ .name }}</h4>
-        <p>{{ .description }}</p>
-      {{ end }}
-    </div>
-
-    <!-- TODO: Style -->
-    <!-- Hobbies -->
-    <h2 class="align-center box">Hobbies</h2>
-    <div class="hobbies">
-      <h4>Outdoors</h4>
-      <ul>
-        {{ range $.Site.Data.resume.hobbies.outdoors }}
-        <li>{{ . }}</li>
+      <!-- Experience -->
+      <h2 class="align-center box no-marg">Full-Time Positions</h2>
+      <div class="full">
+        {{ range $.Site.Data.resume.experience.fulltime }}
+          <div class="job">
+            <h3>{{ .position }},</h3> {{ .company }}
+            <p class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</p>
+            <p>{{ .summary }}</p>
+            <ul>
+              {{ range $duty := .duties }}
+              <li>{{ $duty }}</li>
+              {{ end }}
+            </ul>
+          </div>
+          <hr>
         {{ end }}
-      </ul>
 
-      <h4>Indoors</h4>
-      <ul>
-        {{ range $.Site.Data.resume.hobbies.indoors }}
-        <li>{{ . }}</li>
-        {{ end }}
-      </ul>
+      </div>
 
-      <h4>Social</h4>
-      <ul>
-        {{ range $.Site.Data.resume.hobbies.social }}
-        <li>{{ . }}</li>
+      <h2 class="align-center box">Part-Time Positions</h2>
+      <div class="experience">
+        {{ range $.Site.Data.resume.experience.parttime }}
+          <h3>{{ .position }}</h3><h4>{{ .company }}</h4>
         {{ end }}
-      </ul>
+      </div>
 
-      <h4>Skill Builders</h4>
-      <ul>
-        {{ range $.Site.Data.resume.hobbies.skillbuilders }}
-        <li>{{ . }}</li>
+      <!-- TODO: Style -->
+      <!-- Volunteer -->
+      <h2 class="align-center box">Volunteer</h2>
+      <div class="volunteer">
+        {{ range $.Site.Data.resume.volunteer.positions }}
+          <h3>{{ .place }}</h3><h4>{{ .date }}</h4>
         {{ end }}
-      </ul>
+      </div>
+
+      <!-- projects -->
+      <h2 class="align-center box">Projects</h2>
+      <div class="projects">
+        {{ range $.Site.Data.resume.projects.personal }}
+          <h4>{{ .name }}</h4>
+          <p>{{ .description }}</p>
+        {{ end }}
+      </div>
+
+      <!-- TODO: Style -->
+      <!-- Hobbies -->
+      <h2 class="align-center box">Hobbies</h2>
+      <div class="hobbies">
+        <h4>Outdoors</h4>
+        <ul>
+          {{ range $.Site.Data.resume.hobbies.outdoors }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+
+        <h4>Indoors</h4>
+        <ul>
+          {{ range $.Site.Data.resume.hobbies.indoors }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+
+        <h4>Social</h4>
+        <ul>
+          {{ range $.Site.Data.resume.hobbies.social }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+
+        <h4>Skill Builders</h4>
+        <ul>
+          {{ range $.Site.Data.resume.hobbies.skillbuilders }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- TODO: Style -->
+      <!-- Education -->
+      <h2 class="align-center box">Education</h2>
+      <div class="education">
+        {{ range $.Site.Data.resume.education.schools }}
+          <h3>{{ .school }}</h3> <h4>{{ .dates }}</h4>
+          <h4>{{ .degree }} <span>{{ .location }}</span></h4>
+        {{ end }}
+      </div>
     </div>
-
-    <!-- TODO: Style -->
-    <!-- Education -->
-    <h2 class="align-center box">Education</h2>
-    <div class="education">
-      {{ range $.Site.Data.resume.education.schools }}
-        <h3>{{ .school }}</h3> <h4>{{ .dates }}</h4>
-        <h4>{{ .degree }} <span>{{ .location }}</span></h4>
-      {{ end }}
-    </div>
-  </div>
-  {{ partial "sidebar" . }}
+    {{ partial "sidebar" . }}
+{{ partial "footer" . }}
