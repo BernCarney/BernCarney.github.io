@@ -1,6 +1,6 @@
 
 +++
-type = "data-resume"
+type = "resume"
 title = "Resume"
 link = "#"
 +++
