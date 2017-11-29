@@ -1,5 +1,5 @@
 {{ partial "general-title" . }}
-
+  <!-- TODO: Setup @media queries -->
 {{ partial "header" . }}
     {{ partial "navbar" . }}
     <!-- Main -->
@@ -87,7 +87,6 @@
 
       </div>
 
-      <!-- TODO: Setup @media for small screens to justify-content center -->
       <h2 class="align-center box">Part-Time Positions</h2>
       <div class="flex-full flex-wrap">
         {{ range $.Site.Data.resume.experience.parttime }}
