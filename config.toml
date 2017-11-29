@@ -102,7 +102,7 @@ pluralizeListTitles = false
 
 [[menu.main]]
   name = "Resume"
-  url = "/resume/"
+  url = "/data-resume/"
   identifier = "fa fa-briefcase"
   weight = 4
 
@@ -117,13 +117,6 @@ pluralizeListTitles = false
   url = "/contact/"
   identifier = "fa fa-envelope-o"
   weight = 6
-
-[[menu.main]]
-  name = "Data Resume"
-  url = "/data-resume/"
-  identifier = "fa fa-envelope-o"
-  weight = 7
-
 
 # Sets Social Media icons to appear and link to your account. Value should be your
 # username unless otherwise noted. These are the icons affected by socialAppearAtTop
