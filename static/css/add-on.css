@@ -17,13 +17,13 @@ body, input, select, textarea {
   padding: 0 2em .5em
 }
 
-.skills, .flex-full {
+.skills, .flex-full, .hobbies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex
 }
 
-.skills, .flex-wrap {
+.skills, .hobbies, .flex-wrap {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
 }
@@ -32,13 +32,13 @@ body, input, select, textarea {
   width:100%
 }
 
-.skills {
+.skills, .hobbies {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center
 }
 
-.skills li{
+.skills li, .hobbies li{
   margin: 0 1em
 }
 
@@ -60,6 +60,10 @@ body, input, select, textarea {
   margin: 0
 }
 
+.no-pad {
+  padding: 0
+}
+
 .job p {
   margin-bottom: 1em
 }
@@ -74,4 +78,8 @@ body, input, select, textarea {
 
 #categories {
   padding-right: 1em
+}
+
+.projects {
+  padding: 0 1em
 }
