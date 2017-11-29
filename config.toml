@@ -68,7 +68,7 @@ pluralizeListTitles = false
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
   [params.intro.pic]
-    src       = "/img/main/logo.png"
+    src       = "/img/main/logo.jpg"
     # Sets Image to be a cirlce
     circle    = true
     # Sets Image to be Future Imperfect's hexagon
@@ -162,4 +162,4 @@ pluralizeListTitles = false
   telegram        = ""
   vine            = ""
   # Email
-  email           = "email@example.com"
+  email           = "bern@berncarney.com"
