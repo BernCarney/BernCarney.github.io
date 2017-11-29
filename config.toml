@@ -102,7 +102,7 @@ pluralizeListTitles = false
 
 [[menu.main]]
   name = "Resume"
-  url = "/resume/"
+  url = "/data-resume/"
   identifier = "fa fa-briefcase"
   weight = 4
 
