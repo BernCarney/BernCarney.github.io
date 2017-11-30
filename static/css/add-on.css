@@ -47,7 +47,7 @@ body, input, select, textarea {
 }
 
 .job:first-of-type {
-  padding-top: 1em
+  padding-top: 2em
 }
 
 .job h3, .school h3 {

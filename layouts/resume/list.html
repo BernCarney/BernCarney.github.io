@@ -71,7 +71,7 @@
       <!-- Experience -->
       <h2 class="align-center box no-marg">Full-Time Positions</h2>
       <div class="full">
-        {{ range $.Site.Data.resume.experience.fulltime }}
+        {{ range first 1 $.Site.Data.resume.experience.fulltime }}
           <div class="job">
             <h3>{{ .position }},</h3> {{ .company }}
             <p class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</p>
@@ -82,7 +82,19 @@
               {{ end }}
             </ul>
           </div>
+        {{ end }}
+        {{ range after 1 $.Site.Data.resume.experience.fulltime }}
           <hr>
+          <div class="job">
+            <h3>{{ .position }},</h3> {{ .company }}
+            <p class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</p>
+            <p>{{ .summary }}</p>
+            <ul>
+              {{ range $duty := .duties }}
+              <li>{{ $duty }}</li>
+              {{ end }}
+            </ul>
+          </div>
         {{ end }}
 
       </div>
