@@ -83,3 +83,12 @@ body, input, select, textarea {
 .projects {
   padding: 0 1em
 }
+
+.copyright a {
+		color: rgb(0, 217, 255);
+    font-weight: 700
+}
+
+#footer .copyright {
+  font-size: .5em;
+}
