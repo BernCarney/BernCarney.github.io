@@ -1,9 +1,6 @@
 # keep public split into seperate branch
 public
 
-# ignore dummy posts/content during development
-content/blog/*
-
 # ignore bfg cleaner
 bfg*
 
