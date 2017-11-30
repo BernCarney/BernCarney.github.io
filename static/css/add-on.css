@@ -50,7 +50,7 @@ body, input, select, textarea {
   padding-top: 1em
 }
 
-.job h3 {
+.job h3, .school h3 {
   display:inline-flex;
   font-size: 100%;
   margin-bottom: 0
