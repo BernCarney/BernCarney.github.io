@@ -1,7 +1,6 @@
 +++
 author = "Bern Carney"
 categories = [""]
-date = 
 description = ""
 featured = ""
 featuredalt = ""
