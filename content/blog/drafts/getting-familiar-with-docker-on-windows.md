@@ -6,10 +6,25 @@ featured = ""
 featuredalt = ""
 featuredpath = ""
 linktitle = ""
-title = ""
+title = "A Development Environment on Windows Using Docker"
 type = "post"
 draft = "true"
 
 +++
 
-## Setting Update Development Environment on Windows Using Docker
+# A Development Environment on Windows Using Docker
+
+### Why
+
+### What Options
+
+### Implementation and Environment in Practice
+Pros | Cons
+---- | ----
+Things | Stuff
+
+### Challenges
+
+### Accomplishments
+
+### Conclusion
