@@ -1,6 +1,6 @@
 +++
 author = "Bern Carney"
-categories = ["Hugo","Static Site","Github","Netlify","Development","Design"]
+categories = ["Web Design"]
 description = "Updating my personal site using a static site generator and my thoughts on it"
 featured = "programming.jpg"
 featuredalt = "Programming Picture"
