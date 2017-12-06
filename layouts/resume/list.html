@@ -71,11 +71,11 @@
 
         <!-- Experience -->
         <h2 class="align-center box no-marg">Full-Time Positions</h2>
-        <div class="full">
+        <section class="full">
           {{ range first 1 $.Site.Data.resume.experience.fulltime }}
             <div class="job">
               <h3>{{ .position }},</h3> {{ .company }}
-              <p class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</p>
+              <p><span class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</span></p>
               <p>{{ .summary }}</p>
               <ul>
                 {{ range $duty := .duties }}
@@ -88,7 +88,7 @@
             <hr>
             <div class="job">
               <h3>{{ .position }},</h3> {{ .company }}
-              <p class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</p>
+              <p><span class="muted">{{ .dates }}&nbsp;&nbsp;&nbsp; <i class="fa fa-building-o" aria-hidden="true"></i> {{ .location }}</span></p>
               <p>{{ .summary }}</p>
               <ul>
                 {{ range $duty := .duties }}
@@ -98,7 +98,7 @@
             </div>
           {{ end }}
 
-        </div>
+        </section>
 
         <h2 class="align-center box">Part-Time Positions</h2>
         <div class="flex-full flex-wrap">
