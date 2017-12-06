@@ -8,16 +8,15 @@ featuredpath = "date"
 linktitle = ""
 title = "Designing a Better Static Site"
 type = "post"
-draft = "true"
 date = "2017-12-05"
 
 +++
 
-Ever since I got access to the Internet, back in the days of dial-up and AOL, I wanted to be a part of it in one way or another. I've created countless websites, if you want to call most of them that, and never really went anywhere with them. I guess I enjoyed the challenge and learning it more than actually using it. I started with static HTML sites with simple styling and later graduated to building sites in Photoshop, slicing them, and building them off of those slices. Dreamweaver came and went and I eventually used multiple iterations of Geocities, Wordpress, Blogger, and ghost blogs or sites. Here I am, over 15 years later, and I've come full circle and am back to making a static HTML site. Fortunately, it's a lot different than opening up Notepad and trying to align tables for 12 hours.
+Ever since I got access to the Internet, back in the days of dial-up and AOL, I wanted to be a part of it in one way or another. I've created countless websites, if you want to call most of them that, and never went anywhere with them. I guess I enjoyed the challenge and learning it more than actually using it. I started with static HTML sites with simple styling and later graduated to building sites in Photoshop, slicing them, and building them off of those slices. Dreamweaver came and went and I ended up using Geocities, Wordpress, Blogger, and ghost blogs or sites. Here I am, over 15 years later, and I've come full circle and am back to making a static HTML site. Lucky for me, creating a static site is a lot different than opening up Notepad and trying to align tables for 12 hours now.
 
 # Static Site Generators
 
-Enter the modern marvel that is a Static Site Generator (SSD for short). In the latest trend to move back towards serving static sites with only Javascript, CSS, and HTML; static site generators have become very popular. I won't get into the details of all the different generators that are out there, there are a lot, because they all do the same thing in one way or another. They take templates and convert them into a static site that can be hosted just about anywhere with performace that dynamic sites can't touch. Not only are they more performant, but they are also more secure and very easily backed up and/or migrated. If the server hosting your site goes down, you don't have to worry about databases and the like, you just need to move your static files to a new host and you're back up and running in no time. You can even host your site for free on sites like [Github][71c6d423] and [Netlify][ad97d98f] (where this one is hosted).
+Enter the modern marvel that is a Static Site Generator (SSD for short). In the latest trend to move back towards serving static sites using Javascript, CSS, and HTML; static site generators have become overwhelmingly popular. I won't get into the details of all the different generators that are out there, there are a lot, because they all do the same thing in one way or another. They take templates and convert them into a static site that can be hosted just about anywhere with performace that dynamic sites can't touch. Not only are they more performant, but they are also more secure and very easily backed up and/or migrated. If the server hosting your site goes down, you don't have to worry about databases and the like, you just need to move your static files to a new host and you're back up and running in no time. You can even host your site for free on sites like [Github][71c6d423] and [Netlify][ad97d98f] (where this one is hosted).
 
 # Hugo
 
