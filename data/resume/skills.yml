@@ -52,6 +52,9 @@ languages:
   - language: SQL
     level:
 
+  - language: PowerShell
+    level:
+
 software:
   - Atom
   - Git
