@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://berncarney.com/"
 languageCode = "en-us"
 title = "Bern Carney"
 theme = "hugo-future-imperfect"
@@ -56,6 +56,9 @@ copyright = "© 2016-{year} Copyright Bernard Carney. All rights reserved."
   username  = "BernCarney"
   repo      = "BernCarney.github.io"
   branch    = "v2.0"
+  recaptcha =
+    sitekey = "6LfZ_DsUAAAAAIXVk2j2bZEKsgXXGiRmf50tDlxI"
+    secret  = "DodI6GrRZxyuEp8fpXPAsaKybMAyNMgzSvGCGuH80vSiqGUEPGzJGKN9Gd6Q+3ynvEmhKJP3M9czlwW7b1R1Wcca0Olcuz142znHTn4r6lto04JYKhPyhlt1ZRvWKtGjKEUr3z+jalyb6mp7dGLfepNzvR5VyJe3R7Jz6uhXeBI="
 
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
