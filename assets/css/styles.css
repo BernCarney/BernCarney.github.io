@@ -1,0 +1,4 @@
+/* Base tailwind imports used instead of @tailwind so it does not conflict with custom imports */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

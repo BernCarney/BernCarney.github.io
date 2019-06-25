@@ -1,7 +1,9 @@
-baseURL = "https://berncarney.com/"
 footnoteReturnLinkContents = "↩"
 title = "Bern Carney"
 googleAnalytics =""
+
+# Code higlighting settings
+pygmentsCodefences = true
 
 [params]
   AuthorName = "Bern"
