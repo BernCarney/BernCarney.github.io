@@ -1,0 +1,10 @@
+# OS/Editor ignores
+.DS_Store
+Thumbs.db
+.cache
+.settings
+.sass-cache
+
+# Folders to ignore
+node_modules
+public
