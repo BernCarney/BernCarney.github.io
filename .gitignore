@@ -1,8 +1,0 @@
-# keep public split into seperate branch
-public
-
-# ignore bfg cleaner
-bfg*
-
-# ignore examples in theme
-themes/hugo-future-imperfect/exampleSite/
