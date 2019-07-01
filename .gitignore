@@ -8,3 +8,5 @@ Thumbs.db
 # Folders to ignore
 node_modules
 public
+reference
+resources/**/*
