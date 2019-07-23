@@ -1,5 +1,5 @@
 {
-  "name": "BernCarney-hugo-site",
+  "name": "berncarney-hugo-site",
   "version": "2.0.0",
   "description": "Personal site using Hugo and Tailwindcss",
   "main": "index.js",

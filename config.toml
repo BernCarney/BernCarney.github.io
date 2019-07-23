@@ -1,12 +1,14 @@
 footnoteReturnLinkContents = "↩"
-title = "Bern Carney"
+title = "BernCarney"
 googleAnalytics =""
 
 # Code higlighting settings
 pygmentsCodefences = true
 
 [params]
-  AuthorName = "Bern"
+  author = "Bern"
+  description = "Description here..."
+  keywords = "something, somethingElse, againElse"
 
 [permalinks]
   posts = "/:year/:month/:title/"
