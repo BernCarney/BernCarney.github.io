@@ -15,12 +15,12 @@ module.exports = {
         route: '/blog/:year/:month/:day/:slug'
       }
     },
-    {
-      use: '@gridsome/plugin-google-analytics'
-      // options: {
-      //   id: 'UA-123456789-1'
-      // }
-    }
+    // {
+    //   use: '@gridsome/plugin-google-analytics'
+    //   // options: {
+    //   //   id: 'UA-123456789-1'
+    //   // }
+    // }
   ],
 
   chainWebpack: config => {

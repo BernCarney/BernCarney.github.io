@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    Nothing here.
+    Nothing here... or is there.
   </Layout>
 </template>
 

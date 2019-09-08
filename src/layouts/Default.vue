@@ -6,7 +6,7 @@
       </strong>
       <nav>
         <g-link to="/">Home</g-link>
-        <g-link to="/about">About</g-link>
+        <g-link to="/about">About Me</g-link>
       </nav>
     </header>
     <slot />
