@@ -5,17 +5,18 @@
         class="flex items-center justify-between flex-wrap bg-gray-900 px-6 py-4"
       >
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <g-link to="/"
-            ><span class="text-l text-green-400 font-mono"
-              >>
-              <span class="hover:text-white"
+          <span class="text-l text-green-400 font-mono"
+            >>
+            <g-link to="/"
+              ><span class="hover:text-white"
                 >/home/{{ $static.metaData.siteName.toLowerCase() }}</span
-              >{{ this.$route.path }}</span
-            ></g-link
+              ></g-link
+            >{{ this.$route.path }}</span
           >
         </div>
         <div class="block lg:hidden">
           <button
+            @click="toggleView"
             class="flex items-center px-3 py-2 border rounded text-red-600 border-red-600 hover:text-white hover:border-white"
           >
             <svg
@@ -28,13 +29,16 @@
             </svg>
           </button>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div
+          v-show="isShowing"
+          class="w-full block flex-grow lg:flex lg:items-center lg:w-auto navlist"
+        >
           <div class="text-sm lg:flex-grow"></div>
-          <div>
+          <div class="mt-12 h-screen lg:h-auto lg:mt-0">
             <span
-              class="text-gray-700 text-l font-mono font-semibold tracking-tight mr-4"
+              class="text-gray-700 text-l font-mono font-semibold tracking-tight mr-2 mt-4"
               >CD</span
-            >
+            ><i class="navbar-cursor bg-gray-700 mr-6 mt-4">&nbsp;&nbsp;</i>
             <g-link
               to="/"
               class="block mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4 uppercase"
@@ -60,14 +64,26 @@
     <slot />
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      isShowing: false
+    };
+  },
+  methods: {
+    toggleView() {
+      this.isShowing = !this.isShowing;
+    }
+  }
+};
+</script>
+
 
 <static-query>
 query {
   metaData {
     siteName
-    siteUrl
-    pathPrefix
   }
 }
 </static-query>
-

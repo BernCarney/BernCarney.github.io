@@ -9,3 +9,6 @@
 /* start utilities */
 @import "tailwindcss/utilities";
 /* end utilities */
+
+/* custome utilities */
+@import "./custom-utilities.css";

@@ -1,0 +1,21 @@
+@media screen and (min-width: 1024px) {
+  .navlist {
+    display: flex !important;
+  }
+}
+
+.navbar-cursor {
+  animation-name: blink;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
