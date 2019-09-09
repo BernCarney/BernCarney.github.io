@@ -33,3 +33,7 @@
   transform: translateX(-30px);
   opacity: 0;
 }
+
+.h-95v {
+  height: 95vh;
+}

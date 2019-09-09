@@ -18,6 +18,7 @@
           <button
             @click="toggleView"
             class="flex items-center px-3 py-2 border rounded text-red-600 border-red-600 hover:text-white hover:border-white"
+            aria-label="Menu Button"
           >
             <svg
               class="fill-current h-3 w-3"
@@ -25,17 +26,20 @@
               xmlns="http://www.w3.org/2000/svg"
             >
               <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              <path
+                d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                aria-label="inner part of menu button"
+              />
             </svg>
           </button>
         </div>
         <transition name="slide-fade">
           <div
             v-show="isShowing"
-            class="w-full block flex-grow lg:flex lg:items-center lg:w-auto navlist"
+            class="w-full block flex-grow lg:flex lg:items-center lg:w-auto navlist h-95v lg:h-auto"
           >
             <div class="text-sm lg:flex-grow"></div>
-            <div class="mt-12 h-screen lg:h-auto lg:mt-0">
+            <div class="mt-12 lg:mt-0">
               <span
                 class="text-gray-700 text-l font-mono font-semibold tracking-tight mr-2 mt-4"
                 >CD</span
@@ -63,7 +67,9 @@
         </transition>
       </nav>
     </header>
-    <slot />
+    <main class="mx-auto p-5">
+      <slot />
+    </main>
   </div>
 </template>
 <script>
