@@ -1,10 +1,11 @@
 <script>
-  import Tailwindcss from "./Tailwindcss.svelte";
-  import Navbar from "./Navbar.svelte";
+  import Tailwindcss from './Tailwindcss.svelte';
 </script>
 
 <Tailwindcss />
 
-<Navbar />
+<h1 class="text-gray-900 text-4xl">Hello Bern!</h1>
 
-<main />
+<style>
+
+</style>
