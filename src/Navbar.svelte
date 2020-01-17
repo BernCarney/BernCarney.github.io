@@ -4,7 +4,7 @@
 
 <header>
   <nav
-    class="flex items-center justify-between flex-wrap pt-3 pb-4 px-4
+    class="flex items-center justify-between flex-wrap pt-1 pb-4 px-4
     border-red-600 border-t-4"
   >
     <!-- Logo -->
@@ -31,28 +31,28 @@
     >
       <div class="text-sm uppercase lg:flex-grow">
         <a
-          href="#responsive-header"
+          href="#home"
           class="block mt-8 lg:inline-block lg:mt-0 text-white font-semibold
           border-b-4 border-transparent hover:border-red-600 mr-4"
         >
           Home
         </a>
         <a
-          href="#responsive-header"
+          href="#about"
           class="block mt-8 lg:inline-block lg:mt-0 text-white font-semibold
           border-b-4 border-transparent hover:border-red-600 mr-4"
         >
           About
         </a>
         <a
-          href="#responsive-header"
+          href="#articles"
           class="block mt-8 lg:inline-block lg:mt-0 text-white font-semibold
           border-b-4 border-transparent hover:border-red-600 mr-4"
         >
           Articles
         </a>
         <a
-          href="#responsive-header"
+          href="#projects"
           class="block mt-8 lg:inline-block lg:mt-0 text-white font-semibold
           border-b-4 border-transparent hover:border-red-600 mr-4"
         >
@@ -60,7 +60,7 @@
         </a>
 
         <a
-          href="#"
+          href="#contact"
           class="inline-block text-sm px-4 py-2 leading-none border text-white
           border-white font-semibold hover:border-transparent hover:text-red-600
           hover:bg-white mt-8 lg:mt-0"
